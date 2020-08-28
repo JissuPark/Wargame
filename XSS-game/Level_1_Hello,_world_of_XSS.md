@@ -4,7 +4,7 @@
 - GET방식을 사용하므로 URL을 통해서도 공격이 가능하다.
 - alert()로 pop up창을 띄운다.
 
-![Level%201%20Hello,%20world%20of%20XSS%209f0712233cbe4beaaa304e0ac23edfb8/Untitled.png](Level%201%20Hello,%20world%20of%20XSS%209f0712233cbe4beaaa304e0ac23edfb8/Untitled.png)
+![https://raw.githubusercontent.com/JissuPark/Wargame/master/XSS-game/Level_1_Hello%2C_world_of_XSS/Untitled%201.png]()
 
 - alert(1); ❌
 
