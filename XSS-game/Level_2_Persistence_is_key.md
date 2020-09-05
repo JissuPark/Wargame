@@ -4,13 +4,14 @@
 - 언제든 user-controlled data는 주의해서 다뤄야한다.
 - 내가 만든 데이터에 코드를 숨기면 저장했다가 언제든 보여줄 것이다.
 
-![Level%202%20Persistence%20is%20key%20a5d32be7a0d3496abf7d4724ecea9050/Untitled.png](Level%202%20Persistence%20is%20key%20a5d32be7a0d3496abf7d4724ecea9050/Untitled.png)
+![](https://github.com/JissuPark/Wargame/blob/master/XSS-game/Level_2_Persistence_is_key/Untitled.png?raw=true)
 
 - alert(1); ❌
 
-    ![Level%202%20Persistence%20is%20key%20a5d32be7a0d3496abf7d4724ecea9050/Untitled%201.png](Level%202%20Persistence%20is%20key%20a5d32be7a0d3496abf7d4724ecea9050/Untitled%201.png)
+    ![](https://github.com/JissuPark/Wargame/blob/master/XSS-game/Level_2_Persistence_is_key/Untitled%201.png?raw=true)
 
-    ![Level%202%20Persistence%20is%20key%20a5d32be7a0d3496abf7d4724ecea9050/Untitled%202.png](Level%202%20Persistence%20is%20key%20a5d32be7a0d3496abf7d4724ecea9050/Untitled%202.png)
+    ![](https://github.com/JissuPark/Wargame/blob/master/XSS-game/Level_2_Persistence_is_key/Untitled%202.png?raw=true)
+)
 
     결과 : blockquote 태그 안에 문자열이 그대로 들어가는 것을 볼 수 있다. 
 
@@ -18,9 +19,10 @@
 
 - <script>alert(1);</script> ❌
 
-    ![Level%202%20Persistence%20is%20key%20a5d32be7a0d3496abf7d4724ecea9050/Untitled%203.png](Level%202%20Persistence%20is%20key%20a5d32be7a0d3496abf7d4724ecea9050/Untitled%203.png)
+  ![](https://github.com/JissuPark/Wargame/blob/master/XSS-game/Level_2_Persistence_is_key/Untitled%203.png?raw=true)
 
-    ![Level%202%20Persistence%20is%20key%20a5d32be7a0d3496abf7d4724ecea9050/Untitled%204.png](Level%202%20Persistence%20is%20key%20a5d32be7a0d3496abf7d4724ecea9050/Untitled%204.png)
+    ![](https://github.com/JissuPark/Wargame/blob/master/XSS-game/Level_2_Persistence_is_key/Untitled%204.png?raw=true)
+  
 
     결과 : script 태그는 인식되었지만 동작하지 않는다. 
 
@@ -30,10 +32,10 @@
 
 - <img src=213 onerror=alert(2);> ✅
 
-    ![Level%202%20Persistence%20is%20key%20a5d32be7a0d3496abf7d4724ecea9050/Untitled%205.png](Level%202%20Persistence%20is%20key%20a5d32be7a0d3496abf7d4724ecea9050/Untitled%205.png)
+    ![](https://github.com/JissuPark/Wargame/blob/master/XSS-game/Level_2_Persistence_is_key/Untitled%205.png?raw=true)
 
     결과 : 이미지를 클릭하면 이미지 태그의 src를 참조할 수 없기 때문에 onerror의 alert가 실행된다.
 
-    ![Level%202%20Persistence%20is%20key%20a5d32be7a0d3496abf7d4724ecea9050/Untitled%206.png](Level%202%20Persistence%20is%20key%20a5d32be7a0d3496abf7d4724ecea9050/Untitled%206.png)
+    ![](https://github.com/JissuPark/Wargame/blob/master/XSS-game/Level_2_Persistence_is_key/Untitled%206.png?raw=true)
 
 ---
